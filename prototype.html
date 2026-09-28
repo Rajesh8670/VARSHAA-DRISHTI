@@ -1,0 +1,930 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Varshaa Drishti - Weather Intelligence</title>
+
+    <link rel="stylesheet" href="prototype.css">
+
+    <!-- Google Font: Outfit for a modern, premium look -->
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet"
+          href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+</head>
+
+<body>
+
+<div class="dashboard">
+
+    <!-- ================= SIDEBAR ================= -->
+    <aside class="sidebar">
+
+        <div class="logo-cloud">
+            <i class="fa-solid fa-cloud"></i>
+        </div>
+
+        <nav class="sidebar-menu">
+
+            <a class="menu-item active">
+                <i class="fa-solid fa-house"></i>
+                <span>Dashboard</span>
+            </a>
+
+            <a class="menu-item">
+                <i class="fa-solid fa-database"></i>
+                <span>Data Sources</span>
+            </a>
+
+            <a class="menu-item">
+                <i class="fa-solid fa-crosshairs"></i>
+                <span>Nowcasting</span>
+            </a>
+
+            <a class="menu-item">
+                <i class="fa-solid fa-triangle-exclamation"></i>
+                <span>Risk Engine</span>
+            </a>
+
+            <a class="menu-item">
+                <i class="fa-solid fa-bell"></i>
+                <span>Alerts</span>
+            </a>
+
+            <a class="menu-item">
+                <i class="fa-solid fa-map"></i>
+                <span>Maps</span>
+            </a>
+
+            <a class="menu-item">
+                <i class="fa-solid fa-chart-simple"></i>
+                <span>Reports</span>
+            </a>
+
+            <a class="menu-item">
+                <i class="fa-solid fa-users"></i>
+                <span>Authorities</span>
+            </a>
+
+            <a class="menu-item">
+                <i class="fa-solid fa-gear"></i>
+                <span>Settings</span>
+            </a>
+
+        </nav>
+
+    </aside>
+
+
+    <!-- ================= MAIN CONTENT ================= -->
+    <main class="main-content">
+
+        <!-- ================= HEADER ================= -->
+        <header class="top-header">
+
+            <div class="brand">
+
+                <div class="brand-title">
+                    VARSHAA <span>DRISHTI</span>
+                </div>
+
+                <div class="brand-subtitle">
+                    AI-POWERED HYPER-LOCAL WEATHER INTELLIGENCE
+                </div>
+
+            </div>
+
+
+            <div class="header-right">
+
+                <div class="location-box">
+                    <i class="fa-solid fa-location-dot"></i>
+                    Kolkata, West Bengal
+                </div>
+
+                <div class="date-box">
+                    <i class="fa-regular fa-calendar"></i>
+                    Tue, 23 Sep 2026
+                </div>
+
+                <div class="time-box">
+                    <i class="fa-regular fa-clock"></i>
+                    10:24 AM
+                </div>
+
+                <div class="notification">
+                    <i class="fa-solid fa-bell"></i>
+                    <span>3</span>
+                </div>
+
+                <div class="profile">
+                    RR
+                </div>
+
+            </div>
+
+        </header>
+
+
+        <!-- ================= WEATHER CARDS ================= -->
+        <section class="weather-cards">
+
+            <div class="weather-card temperature">
+
+                <div class="weather-icon">
+                    <i class="fa-solid fa-temperature-high"></i>
+                </div>
+
+                <div class="weather-info">
+                    <div class="weather-value">28°C</div>
+                    <div class="weather-name">Temperature</div>
+                </div>
+
+                <div class="weather-change red">
+                    ↑ +1.2°
+                </div>
+
+            </div>
+
+
+            <div class="weather-card humidity">
+
+                <div class="weather-icon">
+                    <i class="fa-solid fa-droplet"></i>
+                </div>
+
+                <div class="weather-info">
+                    <div class="weather-value">78%</div>
+                    <div class="weather-name">Humidity</div>
+                </div>
+
+                <div class="weather-change blue">
+                    ↓ -4%
+                </div>
+
+            </div>
+
+
+            <div class="weather-card wind">
+
+                <div class="weather-icon">
+                    <i class="fa-solid fa-wind"></i>
+                </div>
+
+                <div class="weather-info">
+                    <div class="weather-value">18 km/h</div>
+                    <div class="weather-name">Wind Speed</div>
+                </div>
+
+                <div class="weather-change green">
+                    ↑ +6 km/h
+                </div>
+
+            </div>
+
+
+            <div class="weather-card rain">
+
+                <div class="weather-icon">
+                    <i class="fa-solid fa-cloud-rain"></i>
+                </div>
+
+                <div class="weather-info">
+                    <div class="weather-value">72 mm</div>
+                    <div class="weather-name">Rainfall (24h)</div>
+                </div>
+
+                <div class="weather-change purple">
+                    ↑ +46 mm
+                </div>
+
+            </div>
+
+
+            <div class="weather-card air">
+
+                <div class="weather-icon">
+                    <i class="fa-solid fa-leaf"></i>
+                </div>
+
+                <div class="weather-info">
+                    <div class="weather-value">65</div>
+                    <div class="weather-name">Air Quality (AQI)</div>
+                </div>
+
+                <div class="aqi-good">
+                    Good
+                </div>
+
+            </div>
+
+
+            <div class="weather-card alerts-card">
+
+                <div class="weather-icon">
+                    <i class="fa-solid fa-triangle-exclamation"></i>
+                </div>
+
+                <div class="weather-info">
+                    <div class="weather-value">3</div>
+                    <div class="weather-name">Active Alerts</div>
+                </div>
+
+                <div class="high-risk">
+                    High Risk
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- ================= MAIN GRID ================= -->
+        <section class="dashboard-grid">
+
+
+            <!-- ================= MAP ================= -->
+            <div class="panel map-panel">
+
+                <div class="panel-header">
+
+                    <div class="panel-title">
+                        <i class="fa-solid fa-map"></i>
+                        REAL-TIME WEATHER MAP
+                    </div>
+
+                </div>
+
+
+                <div class="map-container">
+
+                    <!-- Search -->
+                    <div class="map-search">
+                        <i class="fa-solid fa-magnifying-glass"></i>
+                        <input type="text" placeholder="Search location...">
+                    </div>
+
+
+                    <!-- Layer control -->
+                    <div class="layer-control">
+                        <span class="toggle active"></span>
+                        Layer Control
+                    </div>
+
+                    <div class="map-buttons">
+                        <button>Radar</button>
+                        <button class="selected">Satellite</button>
+                        <button>Risk Map</button>
+                        <button>DEM</button>
+                    </div>
+
+
+                    <img src="img1.png" class="weather-map-image" alt="Real-time satellite weather map">
+
+
+                    <!-- Map location labels -->
+                    <div class="map-label west-bengal">
+                        West Bengal
+                    </div>
+
+                    <div class="map-label kolkata">
+                        <i class="fa-solid fa-location-dot"></i>
+                        Kolkata
+                    </div>
+
+                    <div class="map-label bihar">
+                        Bihar
+                    </div>
+
+                    <div class="map-label jharkhand">
+                        Jharkhand
+                    </div>
+
+                    <div class="map-label bangladesh">
+                        Bangladesh
+                    </div>
+
+                    <div class="map-label odisha">
+                        Odisha
+                    </div>
+
+                    <div class="map-label bay">
+                        Bay of Bengal
+                    </div>
+
+
+                    <!-- Rainfall legend -->
+                    <div class="rainfall-legend">
+
+                        <strong>Rainfall Intensity</strong>
+
+                        <small>(mm/hr)</small>
+
+                        <div class="legend-row">
+                            <span class="legend-color c-red"></span>
+                            &gt; 100
+                        </div>
+
+                        <div class="legend-row">
+                            <span class="legend-color c-orange"></span>
+                            50 - 100
+                        </div>
+
+                        <div class="legend-row">
+                            <span class="legend-color c-yellow"></span>
+                            20 - 50
+                        </div>
+
+                        <div class="legend-row">
+                            <span class="legend-color c-green"></span>
+                            5 - 20
+                        </div>
+
+                        <div class="legend-row">
+                            <span class="legend-color c-lightgreen"></span>
+                            1 - 5
+                        </div>
+
+                        <div class="legend-row">
+                            <span class="legend-color c-blue"></span>
+                            0 - 1
+                        </div>
+
+                    </div>
+
+
+                    <!-- Zoom controls -->
+                    <div class="zoom-controls">
+
+                        <button>+</button>
+                        <button>−</button>
+                        <button>
+                            <i class="fa-solid fa-crosshairs"></i>
+                        </button>
+
+                    </div>
+
+
+                    <!-- Live update -->
+                    <div class="live-update">
+                        <span></span>
+                        Live Update
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <!-- ================= NOWCAST + RISK ================= -->
+            <div class="middle-column">
+
+
+                <!-- NOWCAST -->
+                <div class="panel nowcast-panel">
+
+                    <div class="panel-header">
+
+                        <div class="panel-title">
+                            <i class="fa-solid fa-chart-line"></i>
+                            NOWCAST PREDICTIONS
+                            <span class="next">
+                                (Next 2 - 6 Hours)
+                            </span>
+                        </div>
+
+                        <a>View Details →</a>
+
+                    </div>
+
+
+                    <div class="prediction-tabs">
+
+                        <button class="active">Rainfall</button>
+                        <button>Wind</button>
+                        <button>Thunderstorm</button>
+                        <button>Cloudburst</button>
+
+                    </div>
+
+
+                    <div class="chart-area">
+
+                        <div class="y-axis">
+                            <span>100</span>
+                            <span>80</span>
+                            <span>60</span>
+                            <span>40</span>
+                            <span>20</span>
+                            <span>0</span>
+                        </div>
+
+                        <div class="chart">
+
+                            <div class="chart-grid"></div>
+
+                            <svg viewBox="0 0 500 200"
+                                 preserveAspectRatio="none">
+                                
+                                <!-- Gradient Definition for the chart fill -->
+                                <defs>
+                                    <linearGradient id="chart-gradient" x1="0" y1="0" x2="0" y2="1">
+                                        <stop offset="0%" stop-color="#00e5ff" stop-opacity="0.8"/>
+                                        <stop offset="100%" stop-color="#00e5ff" stop-opacity="0"/>
+                                    </linearGradient>
+                                </defs>
+
+                                <path
+                                    d="M0,160
+                                       C70,140 80,125 125,115
+                                       C175,95 185,70 250,55
+                                       C310,72 330,90 375,105
+                                       C425,125 450,140 500,160
+                                       L500,200 L0,200 Z"
+                                    class="chart-fill">
+                                </path>
+
+                                <path
+                                    d="M0,160
+                                       C70,140 80,125 125,115
+                                       C175,95 185,70 250,55
+                                       C310,72 330,90 375,105
+                                       C425,125 450,140 500,160"
+                                    class="chart-line">
+                                </path>
+
+                                <circle cx="0" cy="160" r="4"/>
+                                <circle cx="125" cy="115" r="4"/>
+                                <circle cx="250" cy="55" r="4"/>
+                                <circle cx="375" cy="105" r="4"/>
+                                <circle cx="500" cy="160" r="4"/>
+
+                            </svg>
+
+                            <div class="x-axis">
+
+                                <span>Now</span>
+                                <span>+1h</span>
+                                <span>+2h</span>
+                                <span>+3h</span>
+                                <span>+4h</span>
+                                <span>+5h</span>
+                                <span>+6h</span>
+
+                            </div>
+
+                        </div>
+
+
+                        <div class="prediction-value">
+
+                            <div class="cloud-icon">
+                                <i class="fa-solid fa-cloud-rain"></i>
+                            </div>
+
+                            <small>Heavy Rain<br>Likely</small>
+
+                            <span>Peak Intensity</span>
+
+                            <strong>72 mm/hr</strong>
+
+                            <span>at</span>
+
+                            <b>+3 hours</b>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+
+                <!-- RISK MAP -->
+                <div class="panel risk-panel">
+
+                    <div class="panel-header">
+
+                        <div class="panel-title">
+                            <i class="fa-solid fa-map"></i>
+                            RISK MAP
+                            <span class="next">
+                                (Next 2 - 6 Hours)
+                            </span>
+                        </div>
+
+                        <a>View Details →</a>
+
+                    </div>
+
+
+                    <div class="prediction-tabs risk-tabs">
+
+                        <button class="active">Flood Risk</button>
+                        <button>Thunderstorm</button>
+                        <button>Cloudburst</button>
+                        <button>Wind Risk</button>
+
+                    </div>
+
+
+                    <img src="img2.png" class="risk-map-image" alt="Weather risk map">
+
+
+                    <div class="risk-level">
+
+                        <strong>Risk Level</strong>
+
+                        <div>
+                            <span class="risk-dot very-high"></span>
+                            Very High
+                        </div>
+
+                        <div>
+                            <span class="risk-dot high"></span>
+                            High
+                        </div>
+
+                        <div>
+                            <span class="risk-dot moderate"></span>
+                            Moderate
+                        </div>
+
+                        <div>
+                            <span class="risk-dot low"></span>
+                            Low
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <!-- ================= RIGHT COLUMN ================= -->
+            <div class="right-column">
+
+
+                <!-- ACTIVE ALERTS -->
+                <div class="panel alerts-panel">
+
+                    <div class="panel-header">
+
+                        <div class="panel-title alert-title">
+                            <i class="fa-solid fa-bell"></i>
+                            ACTIVE ALERTS
+                        </div>
+
+                        <a>View All →</a>
+
+                    </div>
+
+
+                    <div class="alert-item high">
+
+                        <div class="alert-icon">
+                            <i class="fa-solid fa-cloud-showers-heavy"></i>
+                        </div>
+
+                        <div class="alert-info">
+
+                            <strong>Heavy Rainfall Alert</strong>
+
+                            <span>
+                                <i class="fa-solid fa-location-dot"></i>
+                                Kolkata, Howrah
+                            </span>
+
+                            <small>Today, 10:20 AM</small>
+
+                        </div>
+
+                        <b>HIGH</b>
+
+                    </div>
+
+
+                    <div class="alert-item moderate">
+
+                        <div class="alert-icon">
+                            <i class="fa-solid fa-bolt"></i>
+                        </div>
+
+                        <div class="alert-info">
+
+                            <strong>Thunderstorm Likely</strong>
+
+                            <span>
+                                <i class="fa-solid fa-location-dot"></i>
+                                North 24 Parganas
+                            </span>
+
+                            <small>Today, 09:45 AM</small>
+
+                        </div>
+
+                        <b>MODERATE</b>
+
+                    </div>
+
+
+                    <div class="alert-item high">
+
+                        <div class="alert-icon">
+                            <i class="fa-solid fa-water"></i>
+                        </div>
+
+                        <div class="alert-info">
+
+                            <strong>Flash Flood Risk</strong>
+
+                            <span>
+                                <i class="fa-solid fa-location-dot"></i>
+                                South 24 Parganas
+                            </span>
+
+                            <small>Today, 09:30 AM</small>
+
+                        </div>
+
+                        <b>HIGH</b>
+
+                    </div>
+
+                </div>
+
+
+            </div>
+
+        </section>
+
+
+        <!-- ================= BOTTOM GRID ================= -->
+        <section class="bottom-grid">
+
+
+            <!-- DATA SOURCES -->
+            <div class="panel data-panel">
+
+                <div class="panel-header">
+
+                    <div class="panel-title">
+                        <i class="fa-solid fa-database"></i>
+                        DATA SOURCES
+                        <span class="next">Live Integration</span>
+                    </div>
+
+                </div>
+
+
+                <div class="data-sources">
+
+                    <div class="data-source">
+
+                        <div class="source-icon satellite-icon">
+                            <i class="fa-solid fa-satellite"></i>
+                        </div>
+
+                        <strong>Satellite</strong>
+                        <small>(INSAT-3D/3DR)</small>
+
+                        <span class="online"></span>
+
+                    </div>
+
+
+                    <div class="data-source">
+
+                        <div class="source-icon weather-icon">
+                            <i class="fa-solid fa-cloud"></i>
+                        </div>
+
+                        <strong>IMD-AA</strong>
+                        <small>(Weather Data)</small>
+
+                        <span class="online"></span>
+
+                    </div>
+
+
+                    <div class="data-source">
+
+                        <div class="source-icon sensor-icon">
+                            <i class="fa-solid fa-wifi"></i>
+                        </div>
+
+                        <strong>Ground Sensors</strong>
+                        <small>(AWS)</small>
+
+                        <span class="online"></span>
+
+                    </div>
+
+
+                    <div class="data-source">
+
+                        <div class="source-icon dem-icon">
+                            <i class="fa-solid fa-mountain"></i>
+                        </div>
+
+                        <strong>DEM</strong>
+                        <small>(Terrain Data)</small>
+
+                        <span class="online"></span>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <!-- SYSTEM OVERVIEW -->
+            <div class="panel system-panel">
+
+                <div class="panel-header">
+
+                    <div class="panel-title">
+                        <i class="fa-solid fa-gear"></i>
+                        SYSTEM OVERVIEW
+                    </div>
+
+                </div>
+
+
+                <div class="system-grid">
+
+                    <div class="system-box">
+
+                        <i class="fa-solid fa-database"></i>
+
+                        <div>
+                            <strong>Data Ingestion</strong>
+                            <span class="status">Live</span>
+                        </div>
+
+                    </div>
+
+
+                    <div class="system-box">
+
+                        <i class="fa-solid fa-brain"></i>
+
+                        <div>
+                            <strong>AI Nowcasting</strong>
+                            <span class="status">Active</span>
+                        </div>
+
+                    </div>
+
+
+                    <div class="system-box">
+
+                        <i class="fa-solid fa-chart-simple"></i>
+
+                        <div>
+                            <strong>Risk Engine</strong>
+                            <span class="status">Running</span>
+                        </div>
+
+                    </div>
+
+
+                    <div class="system-box">
+
+                        <i class="fa-solid fa-bell"></i>
+
+                        <div>
+                            <strong>Alerts & Notifications</strong>
+                            <span class="status">Online</span>
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <!-- RECENT EVENTS -->
+            <div class="panel events-panel">
+
+                <div class="panel-header">
+
+                    <div class="panel-title">
+                        <i class="fa-solid fa-list"></i>
+                        RECENT EVENTS
+                    </div>
+
+                    <a>View All →</a>
+
+                </div>
+
+
+                <div class="events-list">
+
+                    <div class="event">
+
+                        <span class="event-dot red-dot"></span>
+
+                        <b>10:20 AM</b>
+
+                        <span>
+                            Heavy rainfall detected in Kolkata
+                        </span>
+
+                    </div>
+
+
+                    <div class="event">
+
+                        <span class="event-dot red-dot"></span>
+
+                        <b>09:45 AM</b>
+
+                        <span>
+                            Thunderstorm likely in N 24 Parganas
+                        </span>
+
+                    </div>
+
+
+                    <div class="event">
+
+                        <span class="event-dot red-dot"></span>
+
+                        <b>09:30 AM</b>
+
+                        <span>
+                            Rising flood risk in S 24 Parganas
+                        </span>
+
+                    </div>
+
+
+                    <div class="event">
+
+                        <span class="event-dot blue-dot"></span>
+
+                        <b>08:15 AM</b>
+
+                        <span>
+                            Cloudburst probability increased
+                        </span>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <!-- QUICK ACTIONS -->
+            <div class="panel actions-panel">
+
+                <div class="panel-header">
+
+                    <div class="panel-title">
+                        <i class="fa-solid fa-bolt"></i>
+                        QUICK ACTIONS
+                    </div>
+
+                </div>
+
+
+                <div class="action-grid">
+
+                    <button>
+                        <i class="fa-solid fa-file-lines"></i>
+                        Generate Report
+                    </button>
+
+                    <button>
+                        <i class="fa-solid fa-bell"></i>
+                        Emergency Alert
+                    </button>
+
+                    <button>
+                        <i class="fa-solid fa-video"></i>
+                        View All Cameras
+                    </button>
+
+                    <button>
+                        <i class="fa-solid fa-map"></i>
+                        Open Map View
+                    </button>
+
+                </div>
+
+            </div>
+
+        </section>
+
+    </main>
+
+</div>
+
+</body>
+</html>
